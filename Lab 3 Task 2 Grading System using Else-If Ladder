@@ -1,0 +1,23 @@
+#include <iostream>
+int main() {
+    double marks;
+
+    // Ask the user to input their exam score marks
+    std::cout << "Type your exam score marks out of 100: ";
+    std::cin >> marks;
+
+    // Evaluate the grade using an else-if ladder
+    if (marks >= 85) {
+        std::cout << "Grade A" << std::endl;
+    } else if (marks >= 80) {
+        std::cout << "Grade B" << std::endl;
+    } else if (marks >= 70) {
+        std::cout << "Grade C" << std::endl;
+    } else if (marks >= 60) {
+        std::cout << "Grade D" << std::endl;
+    } else {
+        std::cout << "Grade F" << std::endl;
+    }
+
+    return 0;
+}
